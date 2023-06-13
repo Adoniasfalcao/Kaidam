@@ -55,6 +55,64 @@ let questions = [
     "Polissíndeto"
   ]
 },
+   {
+   numb: 6,
+   question: "(Fac. São Marcos) Assinale a frase incorreta, quanto à flexão de grau do adjetivo:",
+   answer: "'Que tristezas são mais ruins que as nossas?'",
+   options: [
+     "'Que tristezas são mais ruins que as nossas?'",
+     "'A proposta era mais boa do que má.'",
+     "'A proposta era mais má do que boa.'",
+     "'Minha casa é mais grande do que pequena.'"
+   ]
+},
+{
+  numb: 7,
+  question: "(UFPR)Assinale a alternativa em que todos os vocábulos são acentuados por serem oxítonos:",
+  answer: "paletó, avô, pajé, café, jiló",
+  options: [
+    "paletó, avô, pajé, café, jiló",
+    "parabéns, vêm, hífen, saí, oásis",
+    "você, capilé, Paraná, lápis, régua",
+    "amém, amável, filó, porém, além"
+    
+  ]
+},
+{
+  numb: 8,
+  question: "(Fuvest–SP)Entre as mensagens abaixo, a única que está de acordo com a norma escrita culta é:",
+  answer: "Não subestime o consumidor. Venda produtos de boa procedência.",
+  options: [
+    "Confira as receitas incríveis preparadas para você. Clica aqui!",
+    "Não subestime o consumidor. Venda produtos de boa procedência.",
+    "Cura-te a ti mesmo e seja feliz.",
+    "Em caso de acidente, não siga viagem. Pede o apoio de um policial."
+  ]
+},
+{
+  numb: 9,
+  question: "(UFMG)'O idealismo supõe a imaginação entusiasta que se adianta à realidade no encalço da perfeição.'(in 'Perspectivas')O sujeito de supõe é:",
+  answer: "o idealismo.",
+  options: [
+    "a imaginação entusiasta.",
+    "entusiasta.",
+    "o idealismo.",
+    "perfeição."
+  ]
+},
+{
+  numb: 10,
+  question: "Em 'O girassol da vida e o passatempo do tempo que passa não brincam nos lagos da lua', há, respectivamente:",
+  answer: "dois elementos formados por justaposição.",
+  options: [
+    "dois elementos formados por justaposição.",
+    "dois elementos formados por aglutinação",
+    "um elemento formado por justaposição e outro por aglutinação",
+    "um elemento formado por aglutinação e outro por justaposição."
+  ]
+}
+
+
 // you can uncomment the below codes and make duplicate as more as you want to add question
 // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
 

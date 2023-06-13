@@ -30,9 +30,9 @@
                 </div>
                 <div class="remmeber-password">
                     <label for=""><input type="checkbox" name="" id="">Lembrar Me</label>
-                    <a href="#">Esqueceu a Senha?</a>
+                    <a href="#" onclick="sendPasswordReset()">Esqueceu a Senha?</a>
                 </div>
-                <button class="btn" onclick="logar()">Login In</button>
+                <button class="btn" onclick="logar()" >Login In</button>
                 <div class="create-account">
                     <p>Ainda não tem uma conta?<a href="#" class="register-link">  Registrar Me</a></p>
                 </div>
@@ -47,14 +47,14 @@
                     <span class="icon">
                         <i class='bx bxs-envelope'></i>
                     </span>
-                    <input type="email" required id="emailReg">
+                    <input type="email" required id = "emailReg">
                     <label for="">Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <i class='bx bxs-lock-alt'></i>
                     </span>
-                    <input type="password" required id="passReg">
+                    <input type="password" required id = "passReg">
                     <label for="">Senha</label>
                 </div>     
                 <div class="input-box">
@@ -71,26 +71,13 @@
             </form>
         </div>
     </div>
-    
+
     <script src="index.js"></script>
-    <script src="firebaseAuth.js"></script>
+    <script src="../firebaseAuth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-    <script>
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyBvCOa3kDSxcmzTLhzWJOHz0ymjZ3aafME",
-            authDomain: "kaidam-cddfd.firebaseapp.com",
-            databaseURL: "https://kaidam-cddfd-default-rtdb.firebaseio.com",
-            projectId: "kaidam-cddfd",
-            storageBucket: "kaidam-cddfd.appspot.com",
-            messagingSenderId: "411295560394",
-            appId: "1:411295560394:web:8fc30a57bc4914d4c27a33",
-            measurementId: "G-43LXQCLPQZ"
-        };
-        firebase.initializeApp(firebaseConfig);
-
-
-    </script>
+    <script src="../firebaseInit.js"></script>
+    
+    
 </body>
 </html>
