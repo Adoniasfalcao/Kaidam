@@ -12,7 +12,7 @@ function logar() {
         var user = userCredential.user;
         alert("Logado com sucesso! ");
         
-        window.location.href="../index.html";
+        window.location.href="/public/Homepage/home.html";
 
     }).catch(function(error){
         alert(getErrorMessage(error));

@@ -1,108 +1,86 @@
-<!-- Credits: Created By Ali Aslan  -->
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>KaidamEDU</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <!-- FontAweome CDN Link for Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 </head>
+
 <body>
-    <div class="container">
-        <img src=""/>
-        <h1>KAIDAM</h1>
+    <div class="login-section">
+        <div class="formbox login">
+            <form action="">
+             
 
-    </div>
-    <!-- start Quiz button -->
-    <div class="start_btn"><button>Iniciar Quiz</button></div>
-
-    <!-- Info Box -->
-    <div class="info_box">
-        <div class="info-title"><span>Algumas regras do quiz</span></div>
-        <div class="info-list">
-            <div class="info">1. Você tem apenas <span>30 segundos</span> por cada questão.</div>
-            <div class="info">2. Após selecionar uma resposta, não há como mudar sua escolha.</div>
-            <div class="info">3. Se o tempo se esgotar, você não pode selecionar outra opção.</div>
-            <div class="info">4. Você não pode sair do quiz enquanto estiver jogando.</div>
-            <div class="info">5. Você conseguirá pontos com base nas questões que acertar.</div>
+                <h2>Login</h2>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-envelope'></i>
+                    </span>
+                    <input type="email" required id="emailUser">
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-lock-alt'></i>
+                    </span>
+                    <input type="password" required id="passUser">
+                    <label for="">Senha</label>
+                </div>
+                <div class="remmeber-password">
+                    <label for=""><input type="checkbox" name="" id="">Lembrar Me</label>
+                    <a href="#" onclick="sendPasswordReset()">Esqueceu a Senha?</a>
+                </div>
+                <button class="btn" onclick="logar()" >Login In</button>
+                <div class="create-account">
+                    <p>Ainda não tem uma conta?<a href="#" class="register-link">  Registrar Me</a></p>
+                </div>
+            </form>
         </div>
-        <div class="buttons">
-            <button class="quit">Sair do quiz</button>
-            <button class="restart">Continuar</button>
-        </div>
-    </div>
-  
-    <header>
+        
+        <div class="formbox register">
+            <form action="">
 
-        <h2 class="Kaidam">Kaidam</h2>
-        <nav class="navigation">
-            <a href="#">Home</a> 
-            <a href="#">Sobre Nós</a>
-            <a href="#">Como Jogar</a>
-            <a href="#">Contatos</a>
-       <a href="Projeto_Login-main/login.html">Login</a>
-        </nav>
-    </header>
-
-
-    <!-- Quiz Box -->
-    <div class="quiz_box">
-        <header>
-            <div class="title">Quiz</div>
-            <div class="timer">
-                <div class="time_left_txt">Tempo</div>
-                <div class="timer_sec">30</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-                <!-- Here I've inserted question from JavaScript -->
-            </div>
-            <div class="option_list">
-                <!-- Here I've inserted options from JavaScript -->
-            </div>
-        </section>
-
-        <!-- footer of Quiz Box -->
-        <footer>
-            <div class="total_que">
-                <!-- Here I've inserted Question Count Number from JavaScript -->
-            </div>
-            <button class="next_btn">Próxima questão</button>
-        </footer>
-    </div>
-
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">Você completou o quiz!</div>
-        <div class="score_text">
-            <!-- Here I've inserted Score Result from JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">Reiniciar quiz</button>
-            <button class="quit">Sair do quiz</button>
+                <h2>Registrar Me</h2>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-envelope'></i>
+                    </span>
+                    <input type="email" required id = "emailReg">
+                    <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-lock-alt'></i>
+                    </span>
+                    <input type="password" required id = "passReg">
+                    <label for="">Senha</label>
+                </div>     
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-lock-alt'></i>
+                    </span>
+                    <input type="password" required id="confirmPass">
+                    <label for="">Confirmar Senha</label>
+                </div>          
+                <button class="btn" onclick="registrar()">Registrar</button>
+                <div class="create-account">
+                    <p>Já possui uma conta?<a href="#" class="login-link">  Login</a></p>
+                </div>
+            </form>
         </div>
     </div>
 
-    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
-    <script src="js/questions.js"></script>
-
-    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
-    <script src="js/script.js"></script>
-    <script src="../firebaseAuth.js"></script>
-    <script src="../firebaseInit.js"></script>
+    <script src="index.js"></script>
+    <script src="firebaseAuth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
-
-
-
+    <script src="firebaseInit.js"></script>
+    
+    
 </body>
 </html>
