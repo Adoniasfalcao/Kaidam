@@ -12,7 +12,7 @@ function logar() {
         var user = userCredential.user;
         alert("Logado com sucesso! ");
         
-        window.location.href="/public/Homepage/home.html";
+        window.location.href="home.html";
 
     }).catch(function(error){
         alert(getErrorMessage(error));
@@ -100,3 +100,13 @@ function getErrorMessage(error) {
 
     return error.message;
 }
+
+firebase.auth().onAuthStateChanged( (user) =>  {
+    if (user) {
+        window.location.href = "home.html"
+
+    } else {
+        window.alert('Você não está logado.., retornando a página de login')
+        window.location.href = "index.html"
+    }
+})

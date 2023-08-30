@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('kaidamback.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .header h1 {
+    font-size: 36px;
+    color: #ffffff;
+  }
+
+  .header p {
+    font-size: 18px;
+    color: #efe9e9;
+  }
+
+  .highlight-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .highlight-section h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .highlight-section p {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .mission {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .mission h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .mission p {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  .footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .contact-section {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .contact-section h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
